@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { AddCategory } from './components/AddCategory'
 import { GrifGrid } from './components/GrifGrid'
 
-export const GifExpertApp = () => {
+export const GifExpertApp = ({ defaultCategories = [] }) => {
 
-    const [categories, setCategories] = useState( ['One Punch', 'Samurai X', 'Dragon Ball'] )
+    const [categories, setCategories] = useState( defaultCategories )
     
     return (
         <>
